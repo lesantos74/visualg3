@@ -1,0 +1,40 @@
+Algoritmo "lanchonete"
+
+
+
+Var
+   codigo : inteiro
+   quantidade, valor : real
+    preco: Vetor[1..5] de real
+   
+
+
+
+Inicio
+      escreva("Codigo do produto comprado: ")
+      leia(codigo)
+      escreva("Quantidade comprada:  ")
+      leia(quantidade)
+      preco[1] <- 5.00
+      preco[2] <- 3.40
+      preco[3] <- 4.80
+      preco[4] <- 8.90
+      preco[5] <- 7.32
+      valor <- preco[codigo] * quantidade
+      se codigo = "1" entao
+            escreva("Valor a pagar: R$ ", valor:8:2)
+            senao
+                 se codigo = "2" entao
+                    escreva("Valor a pagar: R$ ", valor:3:2)
+
+                    senao
+                         escreva("Valor a pagar: R$ ", valor:3:2)
+fimse
+fimse
+
+
+
+
+
+
+Fimalgoritmo
